@@ -1,0 +1,100 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(230, 230, 230);
+  font-family: "Rubik", sans-serif;
+}
+.contenedorPoked {
+  background-color: red;
+  height: 550px;
+  position: relative;
+  min-width: 400px;
+}
+.contenedorPoked img {
+  width: 100%;
+  height: 100%;
+}
+
+.lucesSuper {
+  position: absolute;
+  width: 100px;
+  height: 25px;
+  background: rgba(0, 0, 255, 0);
+  top: 23px;
+  left: 100px;
+}
+.luz1 {
+  left: 24px;
+  top: 7px;
+}
+.luz2 {
+  left: 53px;
+  top: 5px;
+}
+.luz3 {
+  right: 2px;
+  top: 3px;
+}
+.lucesAct {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  animation: animateLuz 2s infinite;
+  border-radius: 50%;
+}
+@keyframes animateLuz {
+  20% {
+    background-color: rgba(240, 248, 255, 0);
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 10px 0 rgb(164, 11, 11);
+  }
+}
+
+.contImg {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(93, 4, 4, 0);
+  bottom: 228px;
+  left: 125px;
+}
+.contImg img {
+  filter: drop-shadow(0 0 10px rgba(152, 152, 152, 0.465));
+}
+.contName {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background: rgb(82, 174, 95);
+  bottom: 75px;
+  left: 85px;
+  rotate: -2deg;
+  font-weight: bold;
+  font-size: 19px;
+  color: aliceblue;
+  letter-spacing: 1px;
+  border: solid 1px black;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.585);
+}
+.alinearFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* button */
+.btns {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  bottom: 80px;
+  right: 110px;
+  background-color: rgba(0, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+}
