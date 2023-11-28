@@ -3,6 +3,9 @@ const pokName = document.getElementById("pokName");
 
 let currentIndex = 1;
 
+/*API
+  https://pokeapi.co/
+*/
 function obtenerPokemon(index) {
   const URL = "https://pokeapi.co/api/v2/pokemon/";
 
@@ -11,9 +14,13 @@ function obtenerPokemon(index) {
     .then((data) => mostrarPokemon(data));
 }
 
+  /*
+    Crear un alementos html.  
+  */
 function mostrarPokemon(data) {
   pokeImg.innerHTML = "";
-
+  
+  // Img
   const divImg = document.createElement("div");
   divImg.innerHTML = `
         <img src="${data.sprites.other["official-artwork"].front_default}">
@@ -37,4 +44,6 @@ const btns = document
 
 
 
-  alert('<-----No responsive movil----->')
+
+// Alerta: NO Responsive.(Width min - 500px)
+  alert(`<---------NO RESPONSIVE---------> `);
