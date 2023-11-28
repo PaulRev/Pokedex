@@ -1,10 +1,6 @@
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(230, 230, 230);
-  font-family: "Rubik", sans-serif;
+body { height: 100vh; display: flex; /*Estilos en el Body.*/ 
+      justify-content: center; align-items: center; 
+      background: rgb(230, 230, 230); font-family: "Rubik", sans-serif;
 }
 .contenedorPoked {
   background-color: red;
@@ -16,7 +12,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .lucesSuper {
   position: absolute;
   width: 100px;
@@ -53,7 +48,6 @@ body {
     box-shadow: 0 0 10px 0 rgb(164, 11, 11);
   }
 }
-
 .contImg {
   position: absolute;
   width: 100px;
@@ -86,9 +80,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-/* button */
-.btns {
+.btns {  /* BUTTON style */
   position: absolute;
   width: 50px;
   height: 60px;
